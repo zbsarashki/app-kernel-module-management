@@ -1,0 +1,5 @@
+This directory contains all StarlingX charts that need to be built for this
+application. The Helm Charts are derived from Kubernetes yaml files for kmm.
+The original sources were retrieved from:
+
+https://github.com/kubernetes-sigs/kernel-module-management.git

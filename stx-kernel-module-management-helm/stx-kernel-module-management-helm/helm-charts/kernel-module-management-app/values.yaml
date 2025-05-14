@@ -1,0 +1,15 @@
+replicaCount: '1'
+namespace: kmm-operator-space
+imagePullPolicy: IfNotPresent
+imagePullSecrets: ["kmm-registry-local-secret"]
+dockerRegistrySecretName: "kmm-registry-local-secret"
+dockerConfigJson: "...."
+
+manager:
+  image: registry.local:9001/gcr.io/k8s-staging-kmm/kernel-module-management-operator:v2.3.0
+  signImage: registry.local:9001/gcr.io/k8s-staging-kmm/kernel-module-management-signimage:v2.3.0
+  workerImage: registry.local:9001/gcr.io/k8s-staging-kmm/kernel-module-management-worker:v2.3.0
+  executerImage: gcr.io/kaniko-project/executor:v1.20.0
+
+webhookServer:
+  image: registry.local:9001/gcr.io/k8s-staging-kmm/kernel-module-management-webhook-server:v2.3.0

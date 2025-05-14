@@ -1,0 +1,6 @@
+apiVersion: v2
+appVersion: 24.09-01
+description: A Helm chart for Kubernetes kernel-module-management
+name: kernel-module-management
+type: application
+version: v2.3.0+STX.10

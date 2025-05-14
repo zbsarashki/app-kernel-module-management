@@ -1,0 +1,5 @@
+python3-k8sapp-kernel-module-management (1.0-1) unstable; urgency=medium
+
+  * Initial Release
+
+ --  Babak Sarashki <babak.sarashki@windriver.com>  Wed, 14 May 2025 19:34:18 -0400

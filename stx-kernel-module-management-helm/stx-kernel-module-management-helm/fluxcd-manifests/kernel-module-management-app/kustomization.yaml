@@ -1,0 +1,19 @@
+# Copyright (c) 2022 Wind River Systems, Inc.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: kmm-operator-space
+resources:
+  - helmrelease.yaml
+secretGenerator:
+  - name: kernel-module-management-static-overrides
+    files:
+      - kernel-module-management-static-overrides.yaml
+  - name: kernel-module-management-system-overrides
+    files:
+      - kernel-module-management-system-overrides.yaml
+generatorOptions:
+  disableNameSuffixHash: true

@@ -1,0 +1,13 @@
+# Copyright (c) 2022 Wind River Systems, Inc.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+---
+debname: python3-k8sapp-kernel-module-management
+debver: 1.0-1
+src_path: k8sapp_kernel_module_management
+revision:
+  dist: $STX_DIST
+  GITREVCOUNT:
+    SRC_DIR: ${MY_REPO}/stx/app-kernel-module-management
+    BASE_SRCREV: 1c0e65f614f1d26d57caf82adbd175e449bcf224
